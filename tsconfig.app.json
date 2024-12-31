@@ -8,11 +8,13 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
+    "noUncheckedSideEffectImports": true,
+
+    // TS检测路径别名@的配置
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    }
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"],
-  "baseUrl": ".",
-  "paths": {
-    "@/*": ["src/*"]
-  }
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue", "src/utils/*.ts"]
 }

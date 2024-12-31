@@ -1,9 +1,7 @@
-<script setup lang="ts">
-import DataVisualization from '@/views/data-visualization/index.vue'
-</script>
+<script setup lang="ts"></script>
 
 <template>
-  <DataVisualization />
+  <router-view />
 </template>
 
 <style scoped></style>

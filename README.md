@@ -44,27 +44,31 @@ export default defineConfig({
 pnpm i @type/node -D
 ```
 
+### 别名TS检测
 
+在`tsconfig.app.json`或`tsconfig.json`文件的`compilerOptions`选项中添加以下代码
 
-## 问题
-
-![image-20241230165514114](http://cdn.mrer.top/2024/s4/image-20241230165514114.png)
-
-**解决：** 在`@/src/vite-env.d.ts`中定义vue模块
-
-```ts {3-7}
-/// <reference types="vite/client" />
-
-declare module '*.vue' {
-  import type { DefineComponent } from 'vue'
-  const component: DefineComponent<{}, {}, any>
-  export default component
+```json {3-7}
+{
+  "compilerOptions": {
+    // TS检测路径别名@的配置
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  },
 }
+
 ```
 
+### 根据目录结构生成路由
 
+```ts
+import { createRouter, createWebHashHistory } from 'vue-router'
+import type { RouteRecordRaw } from 'vue-router'
+import { homeHeader } from '../data/home-header'
+import type { HomeHeaderItem } from '../types/data'
 
-
-
-
-
+/** 根据目录结构生成路由 */
+function genRoutes() {
+  const files: Record<string, any> = import.meta.
