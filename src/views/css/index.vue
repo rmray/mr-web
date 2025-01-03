@@ -1,16 +1,15 @@
 <script setup lang="ts">
-
+import Layout from '@/components/layout/index.vue'
 </script>
 
 <template>
   <div class="css">
-    css
+    <layout category-name="css" />
   </div>
 </template>
 
-
 <style lang="scss" scoped>
-.css{
+.css {
   color: inherit;
 }
 </style>

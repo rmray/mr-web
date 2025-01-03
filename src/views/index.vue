@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import HomeHeader from '@/components/home-header/index.vue'
-import HomeFooter from '@/components/home-footer/index.vue'
+// import HomeFooter from '@/components/home-footer/index.vue'
 
 import { homeHeader } from '../data/home-header.ts'
 </script>

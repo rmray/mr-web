@@ -1,15 +1,16 @@
 <script setup lang="ts">
-import Layout from '@/components/layout/index.vue'
+
 </script>
 
 <template>
-  <div class="js">
-    <layout category-name="js" />
+  <div class="svg">
+    <svg></svg>
   </div>
 </template>
 
+
 <style lang="scss" scoped>
-.js {
+.svg{
   color: inherit;
 }
 </style>

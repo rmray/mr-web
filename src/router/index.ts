@@ -32,7 +32,7 @@ function genChildrenRoutes(homeHeader: HomeHeaderItem[]) {
     }
     routes.push(newRoute)
   })
-  console.log(routes)
+  // console.log(routes)
   return routes
 }
 

@@ -3,13 +3,13 @@ import Layout from '@/components/layout/index.vue'
 </script>
 
 <template>
-  <div class="js">
-    <layout category-name="js" />
+  <div class="ssr">
+    <layout category-name="ssr" />
   </div>
 </template>
 
 <style lang="scss" scoped>
-.js {
+.ssr {
   color: inherit;
 }
 </style>

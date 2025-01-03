@@ -3,3 +3,10 @@ export type HomeHeaderItem = {
   title?: string
   path?: any
 }
+
+export type FileTree = {
+  name: string
+  path: string
+  children: FileTree[]
+  _pathArr?: string[]
+}

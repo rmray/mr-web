@@ -3,13 +3,13 @@ import Layout from '@/components/layout/index.vue'
 </script>
 
 <template>
-  <div class="js">
-    <layout category-name="js" />
+  <div class="webpack5">
+    <layout category-name="webpack5" />
   </div>
 </template>
 
 <style lang="scss" scoped>
-.js {
+.webpack5 {
   color: inherit;
 }
 </style>
