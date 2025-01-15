@@ -10,6 +10,5 @@ import layout from '@/components/layout/index.vue'
 
 <style lang="less" scoped>
 .data-visualization {
-
 }
 </style>
